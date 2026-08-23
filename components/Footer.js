@@ -21,7 +21,7 @@ function Footer() {
   <div class="brand-socials my-3 mt-4">
   
 
-    <a href="https://www.facebook.com/people/Husyn-Technologies/61590893536047/"
+    <a href="https://www.facebook.com/people/=s/61590893536047/"
       target="_blank"
       rel="noopener noreferrer"
       class="mx-1"
@@ -62,14 +62,14 @@ function Footer() {
     <div class="col-6 col-sm-4 col-lg-4">
       <div class="fw-6">Connect</div>
       <div class="row gy-2 mt-2">
-        <div><a href="mailto:info@vulkantech.com">info@vulkantech.com</a></div>
-        <div><a href="https://wa.me/923480931908" target="_blank" rel="noopener">WhatsApp: +92 348 0931908</a></div>
+        <div><a href="mailto:info@vulkantec.com">info@vulkantec.com</a></div>
+        <div><a href="https://wa.me/923480871290" target="_blank" rel="noopener">WhatsApp: +92 348 0931908</a></div>
       </div>
     </div>
     <div class="col-12 col-sm-4 col-lg-4">
       <div class="fw-6">Location</div>
       <div class="row gy-2 mt-2">
-        <div>Dubai, United Arab Emirates</div>
+        <div>Islamabad, Pakistan</div>
         <div class="opacity-75">Serving clients worldwide</div>
       </div>
     </div>
