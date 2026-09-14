@@ -63,7 +63,7 @@ function Footer() {
       <div class="fw-6">Connect</div>
       <div class="row gy-2 mt-2">
         <div><a href="mailto:info@vulkantec.com">info@vulkantec.com</a></div>
-        <div><a href="https://wa.me/923480871290" target="_blank" rel="noopener">WhatsApp: +92 348 0931908</a></div>
+        <!-- <div><a href="https://wa.me/923480871290" target="_blank" rel="noopener">WhatsApp: +92 348 0931908</a></div> -->
       </div>
     </div>
     <div class="col-12 col-sm-4 col-lg-4">
