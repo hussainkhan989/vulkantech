@@ -40,6 +40,50 @@ body {
   transition: background-color 0.3s ease, color 0.3s ease;
 }
 
+#navbar .navbar-collapse {
+  align-items: center;
+}
+.theme-toggle-btn {
+  flex-shrink: 0;
+  margin-left: 0.9rem;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  border: 1px solid var(--border-soft);
+  background: var(--bg-surface);
+  color: var(--text-heading);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1rem;
+  line-height: 1;
+  padding: 0;
+  cursor: pointer;
+  box-shadow: 0 4px 14px rgba(13, 19, 23, 0.08);
+  transition: transform 0.3s var(--ease-smooth), background-color 0.3s ease,
+    color 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
+}
+.theme-toggle-btn i {
+  font-size: 1rem;
+  line-height: 1;
+}
+.theme-toggle-btn:hover,
+.theme-toggle-btn:focus-visible {
+  transform: translateY(-2px) scale(1.05);
+  background: var(--brand-accent);
+  border-color: var(--brand-accent);
+  color: #ffffff;
+  box-shadow: 0 8px 20px rgba(23, 2, 218, 0.25);
+}
+.theme-toggle-btn:active {
+  transform: translateY(0) scale(0.96);
+}
+@media (max-width: 767px) {   
+  .theme-toggle-btn {
+    margin: 0.75rem 0 0;
+    align-self: flex-start;
+  }
+}
 #navbar {
   background: var(--navbar-bg);
   transition: background-color 0.3s ease;
