@@ -2,6 +2,13 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
+    <script>
+      (function () {
+        var stored = localStorage.getItem("theme");
+        var theme = stored || (window.matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light");
+        document.documentElement.setAttribute("data-theme", theme);
+      })();
+    </script>
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Contact Us | Vulkantec</title>
@@ -94,7 +101,8 @@
               <div class="row">
                 <div class="col-12 col-md-6">
                   <h1 class="cl-blue-900">
-                    Need a website, AI integration, or cybersecurity assessment? Let's connect.
+                    Need a website, AI, or cybersecurity? Let’s connect.
+
                   </h1>
                   <p>
                     Email info@vulkantech.com for a free consultation.
@@ -206,7 +214,7 @@
             </div>
             <div class="col-12 col-md-6 overflow-hidden b-6">
               <iframe
-                src="https://www.google.com/maps?q=Dubai,+United+Arab+Emirates&output=embed"
+                src="https://maps.google.com/maps?q=Islamabad,Pakistan&z=12&output=embed"
                 width="100%"
                 height="420"
                 style="border:0; display:block;"
