@@ -30,7 +30,7 @@
 
 [data-theme="dark"] {
   --bg-page: #0b1220;
-  --bg-surface: #354668;
+  --bg-surface: #131b2b;
   --bg-surface-alt: #0f1a2b;
   --bg-surface-soft: #101b2c;
   --text-heading: #f5f7fa;
@@ -206,11 +206,11 @@ footer .brand-logo:hover {
 }
 /* background Colors */
 .bg-brand-primay {
-  background: #2c57e3 !important;
-  color: rgb(0, 0, 0) !important;
+  background: #f58a07 !important;
+  color: white !important;
 }
 .bg-brand-primayfaint {
-  color: #1404f8 !important;
+  color: #f58a07 !important;
   background: rgba(245, 138, 7, 0.1) !important;
 }
 .bg-bluefaint {
@@ -727,8 +727,64 @@ section a:not(.btn):not(.navbar-brand):not(.nav-link) {
 }
 
 /* ===================================================================
-   Industry cards
+   Hero CTA buttons
 =================================================================== */
+.hero-cta-group {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.85rem;
+}
+.hero-cta-group .btn {
+  padding: 0.9rem 2.1rem;
+  font-size: 1.02rem;
+  font-weight: 700;
+}
+.hero-cta-group .btn-primary {
+  box-shadow: 0 14px 30px rgba(13, 19, 23, 0.18);
+}
+.hero-cta-group .cl-blue-900 {
+  border: 2px solid currentColor;
+}
+.btn-cta-primary {
+  background: var(--brand-accent);
+  color: #ffffff !important;
+  font-weight: 600;
+  padding: 0.85rem 1.85rem;
+  border: none;
+  box-shadow: 0 10px 26px rgba(245, 138, 7, 0.28);
+}
+.btn-cta-primary:hover,
+.btn-cta-primary:focus-visible {
+  background: var(--hover-accent);
+  color: #ffffff !important;
+  box-shadow: 0 14px 32px rgba(var(--hover-accent-rgb), 0.32);
+}
+.btn-cta-secondary {
+  background: transparent;
+  color: var(--text-heading) !important;
+  font-weight: 600;
+  padding: 0.8rem 1.85rem;
+  border: 2px solid var(--border-soft);
+}
+.btn-cta-secondary:hover,
+.btn-cta-secondary:focus-visible {
+  background: var(--hover-accent);
+  border-color: var(--hover-accent);
+  color: #ffffff !important;
+}
+@media (max-width: 575px) {
+  .hero-cta-group {
+    flex-direction: column;
+    align-items: stretch;
+  }
+  .btn-cta-primary,
+  .btn-cta-secondary {
+    text-align: center;
+  }
+}
+
+
 .industry-card {
   position: relative;
   background: var(--industry-card-bg);
